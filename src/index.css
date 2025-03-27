@@ -1,0 +1,126 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Import Google Font for a Futuristic Look */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+/* Apply the futuristic font globally */
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #000; /* Cyberpunk dark theme */
+  color: #e0e0e0; /* Light text for contrast */
+}
+
+/* Cyberpunk Grid Background */
+.bg-grid-pattern {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  opacity: 0.2;
+}
+
+/* Cyberpunk Button Styles */
+.cyber-button {
+  background: linear-gradient(45deg, #003366, #00ffff); /* Navy Blue and Light Blue */
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white; /* Text color changed to white for contrast */
+  transition: 0.3s ease-in-out;
+}
+
+.cyber-button:hover {
+  transform: scale(1.05);
+}
+
+/* Replace default purple with navy blue */
+.bg-navy-800 {
+  background-color: #003366; /* Navy Blue */
+}
+
+.text-navy-800 {
+  color: #003366; /* Navy Blue Text */
+}
+
+.w-24 {
+  border-color: #003366; /* Border Color */
+}
+
+.w-48 {
+  background-color: #003366; /* Background color for certain elements */
+}
+
+/* Tags with Lighter Blue Shades */
+.bg-lightBlue-100 {
+  background-color: #b3d9f7; /* Lighter Blue for Tags */
+}
+
+.text-lightBlue-800 {
+  color: #007bb5; /* Lighter Navy Blue Text for Tags */
+}
+
+.bg-lightBlue-200 {
+  background-color: #80b9d9; /* Even lighter blue for tags */
+}
+
+.text-lightBlue-700 {
+  color: #006994; /* Darker light blue text for tags */
+}
+
+/* Replace default indigo with navy blue */
+.text-indigo-600 {
+  color: #003366; /* Navy Blue Text */
+}
+
+/* Animations */
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+.flicker {
+  animation: flicker 1.5s infinite alternate;
+}
+
+/* Additional shades for deeper navy effects */
+.bg-navy-50 {
+  background-color: #e6f0f5; /* Lightest Navy */
+}
+
+.bg-navy-200 {
+  background-color: #80b0cd; /* Soft Navy Blue */
+}
+
+.bg-navy-300 {
+  background-color: #4d90b9; /* Muted Navy Blue */
+}
+
+.bg-navy-400 {
+  background-color: #1a70a5; /* Deeper Navy Blue */
+}
+
+.bg-navy-500 {
+  background-color: #005d8c; /* Mid Navy Blue */
+}
+
+.bg-navy-600 {
+  background-color: #004d73; /* Deep Navy Blue */
+}
+
+.bg-navy-700 {
+  background-color: #003c59; /* Even deeper Navy Blue */
+}
+
+.bg-navy-900 {
+  background-color: #001a28; /* Darkest Navy Blue */
+}
+
+/* Adjust the flicker effect timing for a more techy appearance */
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
